@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Add Battle.net Account</h1>
+  <form (ngSubmit)="onAccountSubmit()" #addAcountForm="ngForm">
+    <input type="text" required [(ngModel)]="account.name" ngControl="name"><span>#</span><input type="text" required [(ngModel)]="account.code" ngControl="code">
+    <button type="submit"></button>
+  </form>
+</div>

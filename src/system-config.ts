@@ -3,10 +3,18 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'ng2-bootstrap': 'vendor/ng2-bootstrap/ng2-bootstrap.js',
+  'ng2-charts': 'vendor/ng2-charts/ng2-charts.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'ng2-bootstrap': {
+    format: 'cjs'
+  },
+  'ng2-charts': {
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,6 +37,12 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/patch-note',
+  'app/components/patch-note',
+  'app/shared/components/account-name',
+  'app/shared/components/account-add',
+  'app/shared/components/account-list',
+  'app/shared/components/detail-view',
   /** @cli-barrel */
 ];
 

@@ -1,3 +1,12 @@
 <h1>
-  {{title}}
+  Overwatcher
 </h1>
+<app-account-list #navController>
+  <app-detail-view title="Add Account...">
+    <app-account-add></app-account-add>
+  </app-detail-view>
+  <app-detail-view *ngFor="let a of navController.accounts">
+    <p>{{a.displayString}}</p>
+  </app-detail-view>
+</app-account-list>
+

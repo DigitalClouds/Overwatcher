@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let view of detailViews" (click)="selectView(view)" [class.active]="view.active">
+    <a href="#">{{view.title}}</a>
+  </li>
+</ul>
+<ng-content></ng-content>
