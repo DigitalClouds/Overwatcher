@@ -17,7 +17,7 @@ import { DetailViewComponent } from '../detail-view/detail-view.component';
 // TODO: Rename this, since it's not going to be the accounts list, it's going to be the master/detail view controller
 export class AccountListComponent implements OnInit, AfterContentInit {
 
-  accounts:Array<BattleNetAccount> = [new BattleNetAccount('GenAp', '2862'), new BattleNetAccount('Zaxgod', '1258')];
+  accounts:Array<BattleNetAccount> = [new BattleNetAccount('GenAp', '2862'), new BattleNetAccount('Zaxgod', '1258'), new BattleNetAccount('DemonFTW', '2623')];
   @ContentChildren(DetailViewComponent) detailViews:QueryList<DetailViewComponent>;
   constructor(private localAccounts:LocalAccountsService) {
     this.updateAccountsList();
